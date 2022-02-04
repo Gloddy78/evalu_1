@@ -68,8 +68,6 @@ h1 {
 }
 
 .title1 {
-    display: flex;
-    justify-content: center;
     padding-top: 20px;
     padding-bottom: 50px;
 }
@@ -87,3 +85,13 @@ h2 {
     margin-bottom: 30px;
 }
 
+/*FOOTER*/
+
+footer {
+    background: rgb(31, 30, 30);
+    color: white;
+}
+
+.rs-icons {
+    margin-left: 3%;
+}

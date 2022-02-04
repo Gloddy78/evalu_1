@@ -63,12 +63,6 @@ h1 {
 }
 
 .title1 {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   padding-top: 20px;
   padding-bottom: 50px;
 }
@@ -84,5 +78,15 @@ h2 {
   border-bottom-right-radius: 20px;
   border-top: none;
   margin-bottom: 30px;
+}
+
+/*FOOTER*/
+footer {
+  background: #1f1e1e;
+  color: white;
+}
+
+.rs-icons {
+  margin-left: 3%;
 }
 /*# sourceMappingURL=styles.css.map */
