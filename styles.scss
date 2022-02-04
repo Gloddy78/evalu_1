@@ -1,7 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Supermercado+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
 body {
     background: rgb(92, 92, 211);
+
 }
 
 /*NAVBAR*/
@@ -37,7 +45,7 @@ h1 {
     padding-right: 20px;  
 }
 
-.item1::before {
+/*.item1::before {
     content:'';
     position: absolute;
     background: white;
@@ -45,11 +53,37 @@ h1 {
     height: 1px;
     left: 5%;
     bottom: 10px;
-}
+}*/
 
 /*MAIN*/
 
 .search-bar {
     padding-top: 10px;
+}
+
+.content-page {
+    font-family: 'Roboto Condensed', sans-serif;
+    color: white;
+    padding-bottom: 30px;
+}
+
+.title1 {
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+    padding-bottom: 50px;
+}
+
+h2 {
+    font-weight: 700;
+}
+
+.text-config {
+    text-align: center;
+    border: 2px solid rgb(31, 30, 30);
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-top: none;
+    margin-bottom: 30px;
 }
 

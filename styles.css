@@ -1,4 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Supermercado+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
 body {
   background: #5c5cd3;
 }
@@ -34,18 +42,47 @@ h1 {
   padding-right: 20px;
 }
 
-.item1::before {
-  content: '';
-  position: absolute;
-  background: white;
-  width: 14%;
-  height: 1px;
-  left: 5%;
-  bottom: 10px;
-}
-
+/*.item1::before {
+    content:'';
+    position: absolute;
+    background: white;
+    width: 14%;
+    height: 1px;
+    left: 5%;
+    bottom: 10px;
+}*/
 /*MAIN*/
 .search-bar {
   padding-top: 10px;
+}
+
+.content-page {
+  font-family: 'Roboto Condensed', sans-serif;
+  color: white;
+  padding-bottom: 30px;
+}
+
+.title1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-top: 20px;
+  padding-bottom: 50px;
+}
+
+h2 {
+  font-weight: 700;
+}
+
+.text-config {
+  text-align: center;
+  border: 2px solid #1f1e1e;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  border-top: none;
+  margin-bottom: 30px;
 }
 /*# sourceMappingURL=styles.css.map */
