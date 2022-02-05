@@ -1,3 +1,5 @@
+$purplebase: rgb(92,92,211);
+
 @import url('https://fonts.googleapis.com/css2?family=Supermercado+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap');
 
@@ -8,7 +10,7 @@
 }
 
 body {
-    background: rgb(92, 92, 211);
+    background: $purplebase;
 
 }
 
@@ -21,7 +23,7 @@ nav {
 }
 
 h1 {
-    color: rgb(92, 92, 211);
+    color: $purplebase;
     font-family: 'Supermercado One', cursive, sans-serif;
 }
 
@@ -45,20 +47,34 @@ h1 {
     padding-right: 20px;  
 }
 
-/*.item1::before {
-    content:'';
-    position: absolute;
-    background: white;
-    width: 14%;
-    height: 1px;
-    left: 5%;
-    bottom: 10px;
-}*/
+/*NAVBAR MEDIA QUERY*/
+
+@media screen and (min-width:768px) {
+
+    /*Navbar*/
+
+    .boxshadow1::before {
+        width: 30%;
+        left: 35%;
+    }
+
+    .cs-navbar .nav-link.cs-navbar-item {
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+    
+    /*main*/
+
+    
+
+    
+
+}
 
 /*MAIN*/
 
 .search-bar {
-    padding-top: 10px;
+    padding-top: 50px;
 }
 
 .content-page {
@@ -90,8 +106,16 @@ h2 {
 footer {
     background: rgb(31, 30, 30);
     color: white;
+    
 }
 
 .rs-icons {
-    margin-left: 3%;
+    margin-right: 5%;
+    margin-bottom: 10px;
 }
+
+.rs-icons1 {
+    margin-left: 5%;
+    margin-bottom: 10px;
+}
+
