@@ -1,0 +1,118 @@
+$purplebase: rgb(92,92,211);
+
+@import url('https://fonts.googleapis.com/css2?family=Supermercado+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: $purplebase;
+
+}
+
+/*NAVBAR*/
+
+nav {
+
+    border-bottom-left-radius: 15%;
+    border-bottom-right-radius: 15%;
+}
+
+h1 {
+    color: $purplebase;
+    font-family: 'Supermercado One', cursive, sans-serif;
+}
+
+.boxshadow1::before {
+    content:'';
+    position: absolute;
+    left: 30%;
+    bottom: 50px;
+    width: 40%;
+    height: 5px;
+    background: rgba(148, 148, 148, 0.3);
+    border-radius: 50%;
+    filter: blur(3px);
+}
+
+
+.cs-navbar .nav-link.cs-navbar-item {
+    color: white;
+    font-weight: 500;
+    padding-left: 20px;
+    padding-right: 20px;  
+}
+
+/*NAVBAR MEDIA QUERY*/
+
+@media screen and (min-width:768px) {
+
+    /*Navbar*/
+
+    .boxshadow1::before {
+        width: 30%;
+        left: 35%;
+    }
+
+    .cs-navbar .nav-link.cs-navbar-item {
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+
+}
+
+/*MAIN*/
+
+.content-page {
+    font-family: 'Roboto Condensed', sans-serif;
+    color: white;
+}
+.title {
+    color: white;
+    padding-top: 20px;
+}
+
+h2 {
+    font-weight: 700;
+}
+
+.search-bar{
+    padding-top: 20px;
+}
+
+.next-event {
+    padding-top: 20px;
+    font-size: 2rem;
+}
+
+.card-config {
+   width: 18rem;
+   margin-bottom: 20px;
+    
+}
+
+div .card-title {
+    font-weight: 700;
+}
+
+/*FOOTER*/
+
+footer {
+    background: rgb(31, 30, 30);
+    color: white;
+    
+}
+
+.rs-icons {
+    margin-right: 5%;
+    margin-bottom: 10px;
+}
+
+.rs-icons1 {
+    margin-left: 5%;
+    margin-bottom: 10px;
+}
