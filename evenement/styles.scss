@@ -99,6 +99,11 @@ div .card-title {
     font-weight: 700;
 }
 
+.card-config.bg-dark:hover {
+    cursor: pointer;
+    background: white;
+}
+
 /*FOOTER*/
 
 footer {
