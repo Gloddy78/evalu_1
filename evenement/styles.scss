@@ -1,4 +1,6 @@
 $purplebase: rgb(92,92,211);
+$navcolor: #EAE0CC;
+$bodybase: #C9ADA1;
 
 @import url('https://fonts.googleapis.com/css2?family=Supermercado+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap');
@@ -10,20 +12,21 @@ $purplebase: rgb(92,92,211);
 }
 
 body {
-    background: $purplebase;
+    background: $bodybase;
 
 }
 
 /*NAVBAR*/
 
 nav {
-
+    background: $navcolor;
     border-bottom-left-radius: 15%;
     border-bottom-right-radius: 15%;
+    border-bottom: 1px solid black;
 }
 
 h1 {
-    color: $purplebase;
+    color: $bodybase;
     font-family: 'Supermercado One', cursive, sans-serif;
 }
 
@@ -34,20 +37,87 @@ h1 {
     bottom: 50px;
     width: 40%;
     height: 5px;
-    background: rgba(148, 148, 148, 0.3);
+    background: rgba(0, 0, 0, 0.3);
     border-radius: 50%;
     filter: blur(3px);
 }
 
 
 .cs-navbar .nav-link.cs-navbar-item {
-    color: white;
+    color: $bodybase;
     font-weight: 500;
     padding-left: 20px;
     padding-right: 20px;  
 }
 
-/*NAVBAR MEDIA QUERY*/
+/*MAIN*/
+
+.content-page {
+    font-family: 'Roboto Condensed', sans-serif;
+    color: black;
+}
+
+h2 {
+    font-weight: 700;
+    font-size: 1.3rem;
+    padding-top: 30px;
+}
+
+.search-bar{
+    padding-top: 20px;
+}
+
+.next-event {
+    padding-top: 20px;
+    font-size: 1.3rem;
+}
+
+.card-config {
+   width: 18rem;
+   margin-bottom: 20px;
+   background: $navcolor; 
+   border: 1px solid black;
+}
+
+.card-btn {
+    background: $bodybase;
+    border: 1px solid black;
+    font-weight: bold;
+}
+
+img {
+    height: 100px;
+}
+
+div .card-title {
+    font-weight: 700;
+}
+
+
+/*FOOTER*/
+
+footer {
+    background: $navcolor;
+    color: black;
+    border-top: 1px solid black;
+    
+}
+
+footer svg {
+    color: black;
+}
+
+.rs-icons {
+    margin-right: 5%;
+    margin-bottom: 10px;
+}
+
+.rs-icons1 {
+    margin-left: 5%;
+    margin-bottom: 10px;
+}
+
+/*MEDIA QUERY*/
 
 @media screen and (min-width:768px) {
 
@@ -62,62 +132,38 @@ h1 {
         padding-left: 100px;
         padding-right: 100px;
     }
-
-}
-
-/*MAIN*/
-
-.content-page {
-    font-family: 'Roboto Condensed', sans-serif;
-    color: white;
-}
-.title {
-    color: white;
-    padding-top: 20px;
-}
-
-h2 {
-    font-weight: 700;
-}
-
-.search-bar{
-    padding-top: 20px;
-}
-
-.next-event {
-    padding-top: 20px;
-    font-size: 2rem;
-}
-
-.card-config {
-   width: 18rem;
-   margin-bottom: 20px;
     
+    /*main*/
+
+    div.title1 h2 {
+        font-size: 2.3rem;
+    }
+
+    .card-config.bg-dark:hover {
+        cursor: pointer;
+        background: white;
+    }
+
+    img {
+        height: 150px;
+    }
+
+    .next-event {
+        font-weight: 500;
+        font-size: 2rem;
+        margin-left: 50px;
+    }
 }
 
-div .card-title {
-    font-weight: 700;
-}
 
-.card-config.bg-dark:hover {
-    cursor: pointer;
-    background: white;
-}
+@media screen and (min-width:425px) {
 
-/*FOOTER*/
+    h2 {
+        font-weight: 700;
+        font-size: 1.5rem;
+    }
 
-footer {
-    background: rgb(31, 30, 30);
-    color: white;
-    
-}
-
-.rs-icons {
-    margin-right: 5%;
-    margin-bottom: 10px;
-}
-
-.rs-icons1 {
-    margin-left: 5%;
-    margin-bottom: 10px;
+    img {
+        height: 150px;
+    }
 }
