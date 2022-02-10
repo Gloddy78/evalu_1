@@ -16,6 +16,7 @@ nav {
   background: #EAE0CC;
   border-bottom-left-radius: 15%;
   border-bottom-right-radius: 15%;
+  border-bottom: 1px solid black;
 }
 
 h1 {
@@ -44,44 +45,52 @@ h1 {
 }
 
 /*MAIN*/
-.search-bar {
-  padding-top: 50px;
-}
-
-.cs-btn {
-  color: black;
-}
-
 .content-page {
   font-family: 'Roboto Condensed', sans-serif;
   color: black;
-  padding-bottom: 30px;
-}
-
-.title1 {
-  padding-top: 20px;
-  padding-bottom: 50px;
 }
 
 h2 {
   font-weight: 700;
   font-size: 1.3rem;
+  padding-top: 30px;
 }
 
-.text-config {
-  text-align: center;
-  border: 2px solid #EAE0CC;
-  border-bottom-left-radius: 20px;
-  border-bottom-right-radius: 20px;
-  border-top: none;
-  margin-bottom: 30px;
-  padding: 10px;
+.search-bar {
+  padding-top: 20px;
+}
+
+.next-event {
+  padding-top: 20px;
+  font-size: 1.3rem;
+}
+
+.card-config {
+  width: 18rem;
+  margin-bottom: 20px;
+  background: #EAE0CC;
+  border: 1px solid black;
+}
+
+.card-btn {
+  background: #C9ADA1;
+  border: 1px solid black;
+  font-weight: bold;
+}
+
+img {
+  height: 100px;
+}
+
+div .card-title {
+  font-weight: 700;
 }
 
 /*FOOTER*/
 footer {
   background: #EAE0CC;
   color: black;
+  border-top: 1px solid black;
 }
 
 footer svg {
@@ -111,14 +120,29 @@ footer svg {
   }
   /*main*/
   div.title1 h2 {
-    font-size: 2.5rem;
+    font-size: 2.3rem;
+  }
+  .card-config.bg-dark:hover {
+    cursor: pointer;
+    background: white;
+  }
+  img {
+    height: 150px;
+  }
+  .next-event {
+    font-weight: 500;
+    font-size: 2rem;
+    margin-left: 50px;
   }
 }
 
 @media screen and (min-width: 425px) {
   h2 {
-    font-weight: 800;
+    font-weight: 700;
     font-size: 1.5rem;
+  }
+  img {
+    height: 150px;
   }
 }
 /*# sourceMappingURL=styles.css.map */
