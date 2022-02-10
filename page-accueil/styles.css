@@ -16,6 +16,7 @@ nav {
   background: #EAE0CC;
   border-bottom-left-radius: 15%;
   border-bottom-right-radius: 15%;
+  border-bottom: 1px solid black;
 }
 
 h1 {
@@ -82,6 +83,7 @@ h2 {
 footer {
   background: #EAE0CC;
   color: black;
+  border-top: 1px solid black;
 }
 
 footer svg {
@@ -111,13 +113,13 @@ footer svg {
   }
   /*main*/
   div.title1 h2 {
-    font-size: 2.5rem;
+    font-size: 2.3rem;
   }
 }
 
 @media screen and (min-width: 425px) {
   h2 {
-    font-weight: 800;
+    font-weight: 700;
     font-size: 1.5rem;
   }
 }
