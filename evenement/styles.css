@@ -78,6 +78,12 @@ h2 {
   font-weight: bold;
 }
 
+.card-btn:hover {
+  background: #EAE0CC;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
 img {
   height: 100px;
 }

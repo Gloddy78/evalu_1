@@ -85,6 +85,11 @@ h2 {
     font-weight: bold;
 }
 
+.card-btn:hover {
+    background: $navcolor;
+    transition: 0.3s;
+}
+
 img {
     height: 100px;
 }
