@@ -1,0 +1,144 @@
+$purplebase: rgb(92,92,211);
+$navcolor: #EAE0CC;
+$bodybase: #C9ADA1;
+
+@import url('https://fonts.googleapis.com/css2?family=Supermercado+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: $bodybase;
+
+}
+
+/*NAVBAR*/
+
+nav {
+    background: $navcolor;
+    border-bottom-left-radius: 15%;
+    border-bottom-right-radius: 15%;
+}
+
+h1 {
+    color: $bodybase;
+    font-family: 'Supermercado One', cursive, sans-serif;
+}
+
+.boxshadow1::before {
+    content:'';
+    position: absolute;
+    left: 30%;
+    bottom: 50px;
+    width: 40%;
+    height: 5px;
+    background: rgba(0, 0, 0, 0.3);
+    border-radius: 50%;
+    filter: blur(3px);
+}
+
+
+.cs-navbar .nav-link.cs-navbar-item {
+    color: $bodybase;
+    font-weight: 500;
+    padding-left: 20px;
+    padding-right: 20px;  
+}
+
+
+/*MAIN*/
+
+.search-bar {
+    padding-top: 50px;
+}
+
+.cs-btn {
+    color: black;
+}
+
+.content-page {
+    font-family: 'Roboto Condensed', sans-serif;
+    color: black;
+    padding-bottom: 30px;
+}
+
+.title1 {
+    padding-top: 20px;
+    padding-bottom: 50px;
+}
+
+h2 {
+    font-weight: 700;
+    font-size: 1.3rem;
+}
+
+
+.text-config {
+    text-align: center;
+    border: 2px solid $navcolor;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-top: none;
+    margin-bottom: 30px;
+    padding: 10px;
+}
+
+/*FOOTER*/
+
+footer {
+    background: $navcolor;
+    color: black;
+    
+}
+
+footer svg {
+    color: black;
+}
+
+.rs-icons {
+    margin-right: 5%;
+    margin-bottom: 10px;
+}
+
+.rs-icons1 {
+    margin-left: 5%;
+    margin-bottom: 10px;
+}
+
+/*MEDIA QUERY*/
+
+@media screen and (min-width:768px) {
+
+    /*Navbar*/
+
+    .boxshadow1::before {
+        width: 30%;
+        left: 35%;
+    }
+
+    .cs-navbar .nav-link.cs-navbar-item {
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+    
+    /*main*/
+
+    div.title1 h2 {
+        font-size: 2.5rem;
+    }
+
+
+}
+
+
+@media screen and (min-width:425px) {
+
+    h2 {
+        font-weight: 800;
+        font-size: 1.5rem;
+    }
+}
